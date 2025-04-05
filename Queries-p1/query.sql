@@ -181,6 +181,14 @@ JOIN accident a ON l.lat = a.lat AND l.lon = a.lon
 JOIN weather w ON l.lat = w.lat AND l.lon = w.long
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow');
 
+-- 2. UNION equivalent (using OR condition)
+SELECT DISTINCT a.accident_id, a.time, l.city, l.state, w.weather_description
+FROM accident a
+JOIN location l ON a.lat = l.lat AND a.lon = l.lon
+JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain')
+   OR EXTRACT(HOUR FROM a.time) BETWEEN 20 AND 5;
+
 
 --9) implementation of the division operator
 --a) A regular nested query with NOT IN
