@@ -40,6 +40,25 @@ FROM Accident a
 WHERE NOT EXISTS (
   SELECT 1 FROM details d WHERE d.detail_id = a.accident_id));
 
+--2) A few queries to demonstrate use of Null values for undefined / non-applicable.
+
+-- Getting the total number of accidents, including those that have NULL values in any column
+SELECT COUNT(*) AS total_accidents 
+FROM accident;
+
+-- Getting the people who do not have a date of birth registered in the person table (date of birth is NULL)
+SELECT p.SSN, p.first_name, p.last_name 
+FROM person AS p
+WHERE p.date_of_birth IS NULL;
+
+-- Getting the average precipitation for years 2014-2015, excluding those with NULL values in the precipitation column
+SELECT AVG(w.precipitation) AS average_precipation
+FROM weather AS w;
+
+-- Will return all the VINs since TRUE or NULL results in TRUE 
+SELECT v.vin
+FROM vehicle AS v
+WHERE TRUE OR v.color IS NULL;
 
 --3) simple group by (with and without where, with or with our having clause)
 --1.with WHERE and HAVING clause
