@@ -171,6 +171,17 @@ JOIN location l ON a.lat = l.lat AND a.lon = l.lon
 JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain');
 
+
+-- Equivalent queries without set operations:
+
+-- 1. INTERSECT equivalent (using INNER JOIN)
+SELECT DISTINCT l.lat, l.lon, l.city, l.state
+FROM location l
+JOIN accident a ON l.lat = a.lat AND l.lon = a.lon
+JOIN weather w ON l.lat = w.lat AND l.lon = w.long
+WHERE w.weather_description IN ('Heavy rain', 'Heavy snow');
+
+
 --9) implementation of the division operator
 --a) A regular nested query with NOT IN
 SELECT v.first_name, v.last_name
