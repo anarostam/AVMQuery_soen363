@@ -156,7 +156,20 @@ JOIN location l ON a.lat = l.lat AND a.lon = l.lon
 JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
 WHERE EXTRACT(HOUR FROM a.time) BETWEEN 20 AND 5;  -- Between 8 PM and 5 AM
 
+--c) difference
+-- Find accidents that occurred during normal weather conditions by taking the difference between accidents with severe weather incidents
+SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
+FROM accident a
+JOIN location l ON a.lat = l.lat AND a.lon = l.lon
+JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
 
+EXCEPT
+
+SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
+FROM accident a
+JOIN location l ON a.lat = l.lat AND a.lon = l.lon
+JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain');
 
 --9) implementation of the division operator
 --a) A regular nested query with NOT IN
