@@ -126,6 +126,38 @@ WHERE d1.road_function = (
     LIMIT 1
 );
 
+--6) Set Operations
+--a) intersect
+-- Find locations that had both accidents and severe weather conditions
+SELECT l.lat, l.lon, l.city, l.state
+FROM location l
+JOIN accident a ON l.lat = a.lat AND l.lon = a.lon
+  
+INTERSECT
+  
+SELECT l.lat, l.lon, l.city, l.state
+FROM location l
+JOIN weather w ON l.lat = w.lat AND l.lon = w.long
+WHERE w.weather_description IN ('Heavy rain', 'Heavy snow');
+
+--b) union
+-- Find potentially dangerous incidents by querying the union of severe weather conditions and nighttime accidents
+SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
+FROM accident a
+JOIN location l ON a.lat = l.lat AND a.lon = l.lon
+JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain')
+
+UNION
+
+SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
+FROM accident a
+JOIN location l ON a.lat = l.lat AND a.lon = l.lon
+JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+WHERE EXTRACT(HOUR FROM a.time) BETWEEN 20 AND 5;  -- Between 8 PM and 5 AM
+
+
+
 --9) implementation of the division operator
 --a) A regular nested query with NOT IN
 SELECT v.first_name, v.last_name
