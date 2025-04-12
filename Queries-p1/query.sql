@@ -47,9 +47,9 @@ SELECT COUNT(*) AS total_accidents
 FROM accident;
 
 -- Getting the people who do not have a date of birth registered in the person table (date of birth is NULL)
-SELECT p.SSN, p.first_name, p.last_name 
-FROM person AS p
-WHERE p.date_of_birth IS NULL;
+SELECT v.SSN, v.first_name, v.last_name 
+FROM victim AS v
+WHERE v.date_of_birth IS NULL;
 
 -- Getting the average precipitation for years 2014-2015, excluding those with NULL values in the precipitation column
 SELECT AVG(w.precipitation) AS average_precipation
@@ -58,7 +58,7 @@ FROM weather AS w;
 -- Will return all the VINs since TRUE or NULL results in TRUE 
 SELECT v.vin
 FROM vehicle AS v
-WHERE TRUE OR v.color IS NULL;
+WHERE TRUE OR v.maker IS NULL;
 
 --3) simple group by (with and without where, with or with our having clause)
 --1.with WHERE and HAVING clause
@@ -137,7 +137,7 @@ INTERSECT
   
 SELECT l.lat, l.lon, l.city, l.state
 FROM location l
-JOIN weather w ON l.lat = w.lat AND l.lon = w.long
+JOIN weather w ON l.lat = w.lat AND l.lon = w.lon
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow');
 
 --b) union
@@ -145,7 +145,7 @@ WHERE w.weather_description IN ('Heavy rain', 'Heavy snow');
 SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
 FROM accident a
 JOIN location l ON a.lat = l.lat AND a.lon = l.lon
-JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+JOIN weather w ON a.lat = w.lat AND a.lon = w.lon 
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain')
 
 UNION
@@ -153,7 +153,7 @@ UNION
 SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
 FROM accident a
 JOIN location l ON a.lat = l.lat AND a.lon = l.lon
-JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+JOIN weather w ON a.lat = w.lat AND a.lon = w.lon 
 WHERE EXTRACT(HOUR FROM a.time) BETWEEN 20 AND 5;  -- Between 8 PM and 5 AM
 
 --c) difference
@@ -161,14 +161,14 @@ WHERE EXTRACT(HOUR FROM a.time) BETWEEN 20 AND 5;  -- Between 8 PM and 5 AM
 SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
 FROM accident a
 JOIN location l ON a.lat = l.lat AND a.lon = l.lon
-JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+JOIN weather w ON a.lat = w.lat AND a.lon = w.lon 
 
 EXCEPT
 
 SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
 FROM accident a
 JOIN location l ON a.lat = l.lat AND a.lon = l.lon
-JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+JOIN weather w ON a.lat = w.lat AND a.lon = w.lon 
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain');
 
 
@@ -178,14 +178,14 @@ WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail',
 SELECT DISTINCT l.lat, l.lon, l.city, l.state
 FROM location l
 JOIN accident a ON l.lat = a.lat AND l.lon = a.lon
-JOIN weather w ON l.lat = w.lat AND l.lon = w.long
+JOIN weather w ON l.lat = w.lat AND l.lon = w.lon
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow');
 
 -- 2. UNION equivalent (using OR condition)
 SELECT DISTINCT a.accident_id, a.time, l.city, l.state, w.weather_description
 FROM accident a
 JOIN location l ON a.lat = l.lat AND a.lon = l.lon
-JOIN weather w ON a.lat = w.lat AND a.lon = w.long 
+JOIN weather w ON a.lat = w.lat AND a.lon = w.lon 
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain')
    OR EXTRACT(HOUR FROM a.time) BETWEEN 20 AND 5;
 
