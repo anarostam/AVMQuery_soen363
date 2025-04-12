@@ -1,0 +1,491 @@
+detail_id,detail_information,light_condition,road_function,intersection_type,drunk_driving
+72851,Embankment,Dark - Not Lighted,Rural-Principal Arterial-Other,Four-Way Intersection,t
+72852,Rollover/Overturn,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72853,Concrete Traffic Barrier,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72854,Pedestrian,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72855,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+72856,Pedestrian,Daylight,Urban-Local Road or Street,Four-Way Intersection,f
+72857,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+72858,Pedestrian,Daylight,Rural-Local Road or Street,T-Intersection,f
+72859,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72860,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72861,Pedestrian,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+72862,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72863,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72864,Embankment,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72865,Live Animal,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+72866,Motor Vehicle In-Transport ,Dark - Lighted,Rural-Minor Arterial,Four-Way Intersection,f
+72867,Motor Vehicle In-Transport ,Dawn,Urban-Minor Arterial,Four-Way Intersection,f
+72868,Embankment,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+72869,Pedestrian,Dark - Lighted,Rural-Local Road or Street,Not an Intersection,f
+72870,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Not an Intersection,f
+72871,Rollover/Overturn,Daylight,Rural-Major Collector,Not an Intersection,f
+72872,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+72873,Embankment,Daylight,Rural-Major Collector,Not an Intersection,t
+72874,Rollover/Overturn,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+72875,Rollover/Overturn,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+72876,Bridge Pier or Support,Dark - Not Lighted,Urban-Local Road or Street,Not an Intersection,f
+72877,Other Fixed Object,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,t
+72878,Rollover/Overturn,Dark - Lighted,Urban-Local Road or Street,Not an Intersection,t
+72879,Guardrail Face,Dark - Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+72880,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,Four-Way Intersection,f
+72881,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72882,Embankment,Dark - Not Lighted,Rural-Major Collector,T-Intersection,f
+72883,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Major Collector,Four-Way Intersection,f
+72884,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Not an Intersection,f
+72885,Pedestrian,Dark - Not Lighted,Urban-Local Road or Street,Not an Intersection,f
+72886,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72887,Railway Vehicle,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72888,Rollover/Overturn,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+72889,Parked Motor Vehicle ,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+72890,Impact Attenuator/Crash Cushion,Daylight,Rural-Local Road or Street,Not an Intersection,t
+72891,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72892,Embankment,Dark - Lighted,Urban-Principal Arterial-Interstate,Not an Intersection,f
+72893,Railway Vehicle,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72894,Rollover/Overturn,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+72895,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Minor Arterial,Four-Way Intersection,f
+72896,Embankment,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+72897,Embankment,Daylight,Urban-Local Road or Street,Not an Intersection,f
+72898,Embankment,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+72899,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,Not an Intersection,f
+72900,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+72901,Tree (Standing Only),Daylight,Urban-Local Road or Street,Not an Intersection,t
+72902,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72903,Pedestrian,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72904,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+72905,Embankment,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+72906,Embankment,Dusk,Rural-Major Collector,Not an Intersection,t
+72907,Rollover/Overturn,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72908,Rollover/Overturn,Daylight,Rural-Major Collector,Four-Way Intersection,f
+72909,Pedestrian,Dark - Lighted,Urban-Local Road or Street,Four-Way Intersection,f
+72910,Embankment,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72911,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Four-Way Intersection,f
+72912,Rollover/Overturn,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+72913,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Four-Way Intersection,f
+72914,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+72915,Curb,Daylight,Urban-Local Road or Street,Not an Intersection,t
+72916,Pedestrian,Dark - Not Lighted,Urban-Local Road or Street,T-Intersection,f
+72917,Ground,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+72918,Railway Vehicle,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72919,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Not an Intersection,f
+72920,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+72921,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+72922,Rollover/Overturn,Dark - Not Lighted,Rural-Local Road or Street,T-Intersection,t
+72923,Rollover/Overturn,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72924,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+72925,Pedestrian,Dark - Lighted,Urban-Local Road or Street,Four-Way Intersection,f
+72926,Embankment,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+72927,Rollover/Overturn,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+72928,Rollover/Overturn,Dark - Lighted,Urban-Local Road or Street,Not an Intersection,t
+72929,Utility Pole/Light Support,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+72930,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72931,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Not an Intersection,f
+72932,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+72933,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72934,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+72935,Rollover/Overturn,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+72936,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+72937,Parked Motor Vehicle ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+72938,Rollover/Overturn,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+72939,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+72940,Tree (Standing Only),Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+72941,Tree (Standing Only),Dark - Lighted,Rural-Major Collector,Not an Intersection,f
+72942,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+72943,Motor Vehicle In-Transport ,Dark - Not Lighted,Urban-Principal Arterial-Interstate,Not an Intersection,t
+72944,Rollover/Overturn,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+72945,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,Not an Intersection,f
+72946,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+72947,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72948,Rollover/Overturn,Dark - Not Lighted,Rural-Local Road or Street,T-Intersection,t
+72949,Embankment,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72950,Utility Pole/Light Support,Dark - Lighted,Urban-Principal Arterial-Interstate,Not an Intersection,t
+72951,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,Four-Way Intersection,f
+72952,Embankment,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72953,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Four-Way Intersection,f
+72954,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+72955,Live Animal,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+72956,Motor Vehicle In-Transport ,Dark - Not Lighted,Urban-Local Road or Street,Not an Intersection,t
+72957,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72958,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,Four-Way Intersection,f
+72959,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Four-Way Intersection,t
+72960,Embankment,Dark - Not Lighted,Urban-Local Road or Street,Not an Intersection,t
+72961,Rollover/Overturn,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+72962,Embankment,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+72963,Embankment,Daylight,Rural-Major Collector,Not an Intersection,f
+72964,Utility Pole/Light Support,Dusk,Rural-Principal Arterial-Other,Not an Intersection,f
+72965,Embankment,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,t
+72966,Embankment,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72967,Embankment,Dark - Not Lighted,Urban-Local Road or Street,Not an Intersection,f
+72968,Motor Vehicle In-Transport ,Dark - Lighted,Rural-Minor Arterial,Four-Way Intersection,f
+72969,Pedestrian,Dark - Lighted,Urban-Local Road or Street,Not an Intersection,f
+72970,Guardrail Face,Dark - Not Lighted,Rural-Major Collector,T-Intersection,t
+72971,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Four-Way Intersection,f
+72972,Utility Pole/Light Support,Dark - Lighted,Rural-Minor Arterial,Not an Intersection,t
+72973,Rollover/Overturn,Dusk,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72974,Parked Motor Vehicle ,Dark - Not Lighted,Urban-Principal Arterial-Interstate,Not an Intersection,f
+72975,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+72976,Utility Pole/Light Support,Daylight,Rural-Local Road or Street,T-Intersection,f
+72977,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Minor Arterial,Four-Way Intersection,f
+72978,Utility Pole/Light Support,Daylight,Urban-Local Road or Street,Not an Intersection,f
+72979,Pedestrian,Dark - Not Lighted,Urban-Local Road or Street,Four-Way Intersection,f
+72980,Snow Bank,Dark - Not Lighted,Rural-Principal Arterial-Other,Four-Way Intersection,f
+72981,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72982,Pedestrian,Dark - Not Lighted,Urban-Minor Arterial,Not an Intersection,f
+72983,Pedestrian,Dark - Lighted,Urban-Collector,Not an Intersection,f
+72984,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+72985,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,Four-Way Intersection,f
+72986,Bridge Rail (Includes parapet),Dawn,Rural-Local Road or Street,T-Intersection,t
+72987,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+72988,Motor Vehicle In-Transport ,Dark - Lighted,Rural-Minor Arterial,Not an Intersection,f
+72989,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+72990,Ditch,Dark - Not Lighted,Rural-Minor Collector,Not an Intersection,t
+72991,"Other Post, Other Pole or Other Supports",Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72992,Ditch,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+72993,Rollover/Overturn,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72994,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,Not an Intersection,f
+72995,Ditch,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,t
+72996,Rollover/Overturn,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+72997,Culvert,Daylight,Rural-Local Road or Street,Not an Intersection,f
+72998,Ditch,Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,f
+72999,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+73000,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73001,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Four-Way Intersection,t
+73002,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73003,Rollover/Overturn,Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73004,Railway Vehicle,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73005,Ditch,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,t
+73006,Guardrail Face,Dark - Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73007,Pedestrian,Daylight,Urban-Local Road or Street,Not an Intersection,f
+73008,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73009,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73010,Pedestrian,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73011,Pedestrian,Dark - Lighted,Urban-Minor Arterial,Not an Intersection,f
+73012,Pedalcyclist,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+73013,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73014,Concrete Traffic Barrier,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73015,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Four-Way Intersection,t
+73016,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73017,Ground,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+73018,Motor Vehicle In-Transport ,Daylight,Rural-Minor Collector,Four-Way Intersection,f
+73019,Fell/Jumped from Vehicle,Dark - Lighted,Urban-Minor Arterial,Not an Intersection,f
+73020,"Other Post, Other Pole or Other Supports",Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73021,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Four-Way Intersection,f
+73022,Rollover/Overturn,Daylight,Rural-Major Collector,Not an Intersection,f
+73023,"Other Post, Other Pole or Other Supports",Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+73024,Live Animal,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73025,Pedestrian,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73026,Non-Motorist on Personal Conveyance,Daylight,Urban-Local Road or Street,T-Intersection,f
+73027,Pedestrian,Daylight,Urban-Other Principal Arterial,Not an Intersection,f
+73028,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73029,Motor Vehicle In-Transport ,Dawn,Rural-Minor Arterial,Not an Intersection,f
+73030,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73031,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+73032,Tree (Standing Only),Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+73033,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73034,Ditch,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+73035,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73036,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73037,Guardrail Face,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+73038,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73039,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73040,Ground,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73041,Tree (Standing Only),Dawn,Rural-Local Road or Street,Not an Intersection,f
+73042,Motor Vehicle In-Transport ,Daylight,Urban-Collector,Four-Way Intersection,f
+73043,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73044,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,T-Intersection,f
+73045,Guardrail Face,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73046,Motor Vehicle In-Transport ,Dark - Lighted,Rural-Major Collector,Four-Way Intersection,f
+73047,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73048,Motor Vehicle In-Transport ,Dark - Lighted,Rural-Minor Arterial,Four-Way Intersection,f
+73049,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,T-Intersection,f
+73050,Motor Vehicle In-Transport ,Daylight,Rural-Minor Collector,Not an Intersection,f
+73051,Embankment,Dark - Lighted,Rural-Major Collector,Not an Intersection,t
+73052,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73053,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73054,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73055,Concrete Traffic Barrier,Dark - Lighted,Urban-Principal Arterial-Interstate,Not an Intersection,f
+73056,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+73057,Pedestrian,Dark - Lighted,Urban-Local Road or Street,T-Intersection,f
+73058,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Four-Way Intersection,f
+73059,Non-Motorist on Personal Conveyance,Daylight,Urban-Other Principal Arterial,Not an Intersection,f
+73060,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73061,Embankment,Daylight,Rural-Major Collector,Not an Intersection,f
+73062,Embankment,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73063,Pedestrian,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73064,Tree (Standing Only),Daylight,Urban-Collector,T-Intersection,f
+73065,Rollover/Overturn,Dusk,Rural-Major Collector,Not an Intersection,t
+73066,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Four-Way Intersection,f
+73067,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73068,Mail Box,Daylight,Rural-Major Collector,Not an Intersection,f
+73069,Rollover/Overturn,Daylight,Rural-Major Collector,Not an Intersection,f
+73070,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73071,Traffic Sign Support ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73072,"Other Post, Other Pole or Other Supports",Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73073,Guardrail Face,Dark - Not Lighted,Urban-Principal Arterial-Interstate,Not an Intersection,f
+73074,Rollover/Overturn,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73075,Pedestrian,Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73076,Ditch,Dark - Lighted,Rural-Major Collector,Not an Intersection,f
+73077,Fence,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+73078,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,T-Intersection,f
+73079,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73080,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+73081,Ditch,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73082,"Other Post, Other Pole or Other Supports",Daylight,Rural-Minor Arterial,Not an Intersection,f
+73083,Rollover/Overturn,Dark - Lighted,Urban-Other Principal Arterial,Not an Intersection,f
+73084,Rollover/Overturn,Daylight,Rural-Major Collector,Not an Intersection,t
+73085,Working Motor Vehicle ,Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73086,Ground,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73087,Fence,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,t
+73088,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73089,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73090,Culvert,Daylight,Rural-Major Collector,Not an Intersection,f
+73091,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73092,Motor Vehicle In-Transport ,Dark - Lighted,Urban-Collector,Four-Way Intersection,t
+73093,Rollover/Overturn,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73094,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,T-Intersection,f
+73095,"Other Post, Other Pole or Other Supports",Dark - Not Lighted,Urban-Other Principal Arterial,Not an Intersection,t
+73096,Tree (Standing Only),Dark - Lighted,Urban-Other Principal Arterial,Not an Intersection,t
+73097,Ground,Daylight,Rural-Major Collector,Not an Intersection,t
+73098,Pedalcyclist,Dark - Lighted,Urban-Minor Arterial,Not an Intersection,f
+73099,"Other Post, Other Pole or Other Supports",Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73100,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73101,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,Not an Intersection,f
+73102,Rollover/Overturn,Dark - Lighted,Urban-Other Principal Arterial,T-Intersection,f
+73103,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Four-Way Intersection,f
+73104,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+73105,Embankment,Daylight,Rural-Minor Collector,Not an Intersection,f
+73106,Rollover/Overturn,Daylight,Rural-Major Collector,T-Intersection,f
+73107,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,T-Intersection,f
+73108,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Four-Way Intersection,f
+73109,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,Not an Intersection,f
+73110,Motor Vehicle In-Transport ,Daylight,Urban-Minor Arterial,Four-Way Intersection,f
+73111,Motor Vehicle In-Transport ,Daylight,Urban-Minor Arterial,Not an Intersection,f
+73112,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+73113,Pedalcyclist,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+73114,Pedestrian,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73115,Rollover/Overturn,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73116,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73117,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73118,Fell/Jumped from Vehicle,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73119,Curb,Dark - Not Lighted,Urban-Collector,Not an Intersection,t
+73120,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73121,Tree (Standing Only),Dark - Lighted,Rural-Local Road or Street,Not an Intersection,t
+73122,Ground,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,t
+73123,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+73124,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+73125,Curb,Daylight,Urban-Collector,Not an Intersection,f
+73126,Rollover/Overturn,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73127,Mail Box,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73128,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73129,Ground,Dark - Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73130,Embankment,Daylight,Rural-Major Collector,Not an Intersection,f
+73131,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73132,Pedestrian,Daylight,Urban-Local Road or Street,Not an Intersection,f
+73133,Other Fixed Object,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73134,Embankment,Daylight,Rural-Major Collector,Not an Intersection,t
+73135,Ground,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73136,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73137,Rollover/Overturn,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+73138,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Not an Intersection,t
+73139,Pedestrian,Dark - Lighted,Urban-Minor Arterial,T-Intersection,f
+73140,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,T-Intersection,f
+73141,Motor Vehicle In-Transport ,Dusk,Urban-Minor Arterial,Four-Way Intersection,f
+73142,Concrete Traffic Barrier,Dark - Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73143,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+73144,Tree (Standing Only),Daylight,Rural-Local Road or Street,Not an Intersection,t
+73145,Rollover/Overturn,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73146,Motor Vehicle In-Transport ,Dark - Lighted,Urban-Minor Arterial,T-Intersection,t
+73147,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73148,Parked Motor Vehicle ,Dark - Not Lighted,Urban-Minor Arterial,Not an Intersection,t
+73149,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73150,Curb,Dark - Lighted,Urban-Local Road or Street,Not an Intersection,t
+73151,Rollover/Overturn,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73152,Rollover/Overturn,Dark - Not Lighted,Urban-Other Principal Arterial,Not an Intersection,f
+73153,Rollover/Overturn,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73154,Motor Vehicle In-Transport ,Daylight,Urban-Minor Arterial,Not an Intersection,f
+73155,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73156,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73157,Rollover/Overturn,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73158,Other Object (not fixed),Dark - Lighted,Urban-Local Road or Street,Not an Intersection,t
+73159,Tree (Standing Only),Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73160,Tree (Standing Only),Dawn,Rural-Local Road or Street,Not an Intersection,t
+73161,Bridge Pier or Support,Dark - Lighted,Urban-Minor Arterial,Not an Intersection,t
+73162,Fell/Jumped from Vehicle,Daylight,Urban-Local Road or Street,Not an Intersection,f
+73163,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73164,Rollover/Overturn,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73165,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73166,Guardrail End,Dark - Not Lighted,Urban-Collector,Not an Intersection,f
+73167,Rollover/Overturn,Dusk,Rural-Minor Arterial,Not an Intersection,t
+73168,Tree (Standing Only),Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+73169,Rollover/Overturn,Daylight,Rural-Major Collector,Not an Intersection,f
+73170,Live Animal,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73171,Utility Pole/Light Support,Dark - Lighted,Urban-Minor Arterial,Not an Intersection,t
+73172,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Not an Intersection,f
+73173,Ditch,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73174,Motor Vehicle In-Transport ,Daylight,Urban-Local Road or Street,Four-Way Intersection,f
+73175,Ditch,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+73176,Pedalcyclist,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73177,Building,Daylight,Urban-Local Road or Street,Not an Intersection,f
+73178,Embankment,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73179,Embankment,Daylight,Rural-Local Road or Street,Not an Intersection,t
+73180,Motor Vehicle In-Transport ,Daylight,Rural-Local Road or Street,Four-Way Intersection,t
+73181,Other Fixed Object,Dawn,Urban-Minor Arterial,Not an Intersection,f
+73182,Embankment,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+73183,"Other Post, Other Pole or Other Supports",Daylight,Rural-Minor Arterial,Not an Intersection,f
+73184,Ditch,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73185,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73186,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+73187,Ground,Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73188,Live Animal,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+73189,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73190,Curb,Dark - Lighted,Urban-Local Road or Street,Not an Intersection,t
+73191,Motor Vehicle In-Transport ,Dawn,Rural-Major Collector,Not an Intersection,f
+73192,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73193,Pedestrian,Daylight,Rural-Local Road or Street,Y-Intersection,t
+73194,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Four-Way Intersection,f
+73195,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+73196,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73197,Embankment,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73198,Motor Vehicle In-Transport ,Dusk,Rural-Local Road or Street,Four-Way Intersection,t
+73199,"Other Post, Other Pole or Other Supports",Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73200,Ditch,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+73201,Curb,Dark - Lighted,Urban-Other Principal Arterial,Not an Intersection,t
+73202,Wall,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+73203,Fence,Daylight,Rural-Major Collector,Not an Intersection,t
+73204,Rollover/Overturn,Daylight,Rural-Major Collector,Not an Intersection,f
+73205,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+73206,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73207,Other Fixed Object,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73208,Ditch,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73209,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Minor Arterial,Four-Way Intersection,f
+73210,Culvert,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+73211,Rollover/Overturn,Dusk,Rural-Local Road or Street,Not an Intersection,f
+73212,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73213,Parked Motor Vehicle ,Dark - Not Lighted,Urban-Local Road or Street,Not an Intersection,t
+73214,"Other Post, Other Pole or Other Supports",Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73215,Motor Vehicle In-Transport ,Dark - Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73216,Rollover/Overturn,Dusk,Rural-Major Collector,Not an Intersection,f
+73217,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,T-Intersection,f
+73218,Motor Vehicle In-Transport ,Dark - Lighted,Urban-Minor Arterial,T-Intersection,t
+73219,Rollover/Overturn,Daylight,Rural-Minor Collector,Not an Intersection,f
+73220,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Y-Intersection,f
+73221,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,Not an Intersection,f
+73222,Other Fixed Object,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+73223,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,T-Intersection,f
+73224,Ditch,Dark - Not Lighted,Rural-Local Road or Street,T-Intersection,f
+73225,Live Animal,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,t
+73226,Ditch,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73227,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73228,Culvert,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+73229,Ground,Daylight,Urban-Local Road or Street,Not an Intersection,f
+73230,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Four-Way Intersection,f
+73231,Rollover/Overturn,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73232,Curb,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+73233,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+73234,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Four-Way Intersection,f
+73235,Rollover/Overturn,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,f
+73236,Other Fixed Object,Dark - Lighted,Rural-Local Road or Street,Not an Intersection,t
+73237,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73238,Concrete Traffic Barrier,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73239,Embankment,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73240,Utility Pole/Light Support,Daylight,Rural-Local Road or Street,Not an Intersection,t
+73241,Pedalcyclist,Daylight,Urban-Local Road or Street,Four-Way Intersection,f
+73242,Ditch,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73243,Motor Vehicle In-Transport ,Dusk,Rural-Major Collector,Four-Way Intersection,t
+73244,Building,Daylight,Rural-Major Collector,Not an Intersection,f
+73245,Ground,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73246,Pedalcyclist,Daylight,Rural-Major Collector,Not an Intersection,f
+73247,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73248,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73249,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73250,Ground,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73251,Utility Pole/Light Support,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73252,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,T-Intersection,f
+73253,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73254,Rollover/Overturn,Daylight,Rural-Local Road or Street,Not an Intersection,t
+73255,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73256,Fence,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73257,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73258,Rollover/Overturn,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73259,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Not an Intersection,f
+73260,Utility Pole/Light Support,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73261,"Other Post, Other Pole or Other Supports",Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73262,Pedestrian,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,t
+73263,Railway Vehicle,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73264,Motor Vehicle In-Transport ,Dark - Lighted,Urban-Minor Arterial,Four-Way Intersection,f
+73265,Rollover/Overturn,Dark - Not Lighted,Rural-Minor Collector,Not an Intersection,f
+73266,Culvert,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,t
+73267,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73268,Pedestrian,Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73269,Ditch,Daylight,Rural-Major Collector,Not an Intersection,f
+73270,Motor Vehicle In-Transport ,Daylight,Urban-Collector,Not an Intersection,t
+73271,Culvert,Daylight,Rural-Major Collector,Not an Intersection,t
+73272,Rollover/Overturn,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+73273,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73274,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73275,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73276,Motor Vehicle In-Transport ,Dark - Lighted,Urban-Other Principal Arterial,Not an Intersection,f
+73277,Motor Vehicle In-Transport ,Daylight,Urban-Other Principal Arterial,T-Intersection,f
+73278,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,t
+73279,Motor Vehicle In-Transport ,Daylight,Rural-Minor Collector,Four-Way Intersection,f
+73280,Pedestrian,Dark - Lighted,Rural-Local Road or Street,Not an Intersection,f
+73281,Pedestrian,Dark - Lighted,Urban-Collector,Not an Intersection,f
+73282,Rollover/Overturn,Dusk,Rural-Local Road or Street,Not an Intersection,t
+73283,Rollover/Overturn,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73284,Rollover/Overturn,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73285,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,t
+73286,Utility Pole/Light Support,Dark - Lighted,Urban-Local Road or Street,Not an Intersection,f
+73287,Rollover/Overturn,Dark - Lighted,Rural-Local Road or Street,Not an Intersection,f
+73288,Motor Vehicle In-Transport ,Daylight,Urban-Minor Arterial,Four-Way Intersection,f
+73289,Motor Vehicle In-Transport ,Dark - Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73290,Pedestrian,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73291,Railway Vehicle,Daylight,Rural-Local Road or Street,Not an Intersection,f
+73292,Guardrail Face,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73293,Guardrail Face,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73294,Culvert,Daylight,Rural-Principal Arterial-Other,Not an Intersection,t
+73295,Pedalcyclist,Daylight,Urban-Minor Arterial,Not an Intersection,f
+73296,Pedestrian,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+73297,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73298,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73299,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Local Road or Street,Not an Intersection,t
+73300,Pedestrian,Daylight,Urban-Other Principal Arterial,Four-Way Intersection,f
+73301,Utility Pole/Light Support,Dark - Lighted,Rural-Minor Arterial,Not an Intersection,f
+73302,Rollover/Overturn,Dark - Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73303,Pedestrian,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+73304,Tree (Standing Only),Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73305,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73306,Culvert,Dawn,Rural-Minor Arterial,Not an Intersection,f
+73307,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73308,Bridge Rail (Includes parapet),Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73309,Rollover/Overturn,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73310,Pedestrian,Dark - Lighted,Urban-Minor Arterial,Four-Way Intersection,f
+73311,Ditch,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+73312,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73313,Motor Vehicle In-Transport ,Dark - Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73314,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73315,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73316,Rollover/Overturn,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+73317,Motor Vehicle In-Transport ,Dark - Not Lighted,Urban-Minor Arterial,Four-Way Intersection,f
+73318,Guardrail Face,Dark - Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73319,Ditch,Dark - Not Lighted,Rural-Minor Arterial,Not an Intersection,f
+73320,Ditch,Daylight,Rural-Major Collector,Not an Intersection,f
+73321,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,T-Intersection,f
+73322,Boulder,Dark - Lighted,Rural-Local Road or Street,Not an Intersection,t
+73323,Embankment,Daylight,Rural-Major Collector,Not an Intersection,f
+73324,Rollover/Overturn,Dark - Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,t
+73325,Rollover/Overturn,Dark - Lighted,Urban-Other Principal Arterial,Not an Intersection,f
+73326,Motor Vehicle In-Transport ,Daylight,Rural-Major Collector,Four-Way Intersection,f
+73327,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Other,Four-Way Intersection,f
+73328,Rollover/Overturn,Dark - Not Lighted,Rural-Major Collector,Not an Intersection,f
+73329,Motor Vehicle In-Transport ,Daylight,Rural-Minor Arterial,Not an Intersection,f
+73330,Motor Vehicle In-Transport ,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
+73331,Motor Vehicle In-Transport ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73332,Parked Motor Vehicle ,Daylight,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73333,"Other Post, Other Pole or Other Supports",Dark - Lighted,Urban-Minor Arterial,Not an Intersection,t
+73334,Embankment,Dusk,Rural-Local Road or Street,Not an Intersection,f
+73335,Bridge Pier or Support,Dark - Lighted,Rural-Principal Arterial-Interstate,Not an Intersection,f
+73336,Bridge Rail (Includes parapet),Daylight,Rural-Principal Arterial-Other,Not an Intersection,f
+73337,Mail Box,Dark - Lighted,Urban-Minor Arterial,Not an Intersection,t
+73338,Other Fixed Object,Unknown,Rural-Major Collector,Not an Intersection,f
+73339,Motor Vehicle In-Transport ,Dark - Lighted,Urban-Other Principal Arterial,Four-Way Intersection,f
+73340,Fence,Dark - Not Lighted,Rural-Principal Arterial-Other,Not an Intersection,f
