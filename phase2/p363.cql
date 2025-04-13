@@ -18,14 +18,6 @@ CALL {
   })
 } IN TRANSACTIONS OF 500 ROWS;
 
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/anarostam/AVMQuery_soen363/main/phase2/csv/details.csv' AS row
-MATCH (a:Accident {accident_id: toInteger(row.detail_id)})
-SET a.detail_information = row.detail_information,
-    a.light_condition = row.light_condition,
-    a.road_function = row.road_function,
-    a.intersection_type = row.intersection_type,
-    a.drunk_driving = toBoolean(row.drunk_driving);
-
 
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/anarostam/AVMQuery_soen363/main/phase2/csv/emergency_respondent.csv' AS row
              CALL {
