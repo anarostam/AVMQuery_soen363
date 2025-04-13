@@ -58,7 +58,7 @@ FROM weather AS w;
 -- Will return all the VINs since TRUE or NULL results in TRUE 
 SELECT v.vin
 FROM vehicle AS v
-WHERE TRUE OR v.maker IS NULL;
+WHERE TRUE OR NULL;
 
 --3) simple group by (with and without where, with or with our having clause)
 --1.with WHERE and HAVING clause
@@ -141,11 +141,11 @@ JOIN weather w ON l.lat = w.lat AND l.lon = w.lon
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow');
 
 --b) union
--- Find potentially dangerous incidents by querying the union of severe weather conditions and nighttime accidents
+-- Find potentially dangerous incidents by querying the union of severe weather conditions and winter accidents
 SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
 FROM accident a
 JOIN location l ON a.lat = l.lat AND a.lon = l.lon
-JOIN weather w ON a.lat = w.lat AND a.lon = w.lon 
+JOIN weather w ON a.lat = w.lat AND a.lon = w.lon AND a.time = w.time 
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain')
 
 UNION
@@ -153,8 +153,8 @@ UNION
 SELECT a.accident_id,a.time,l.city,l.state,w.weather_description
 FROM accident a
 JOIN location l ON a.lat = l.lat AND a.lon = l.lon
-JOIN weather w ON a.lat = w.lat AND a.lon = w.lon 
-WHERE EXTRACT(HOUR FROM a.time) BETWEEN 20 AND 5;  -- Between 8 PM and 5 AM
+JOIN weather w ON a.lat = w.lat AND a.lon = w.lon AND a.time = w.time
+WHERE EXTRACT(MONTH FROM a.time) IN (12, 1, 2);  
 
 --c) difference
 -- Find accidents that occurred during normal weather conditions by taking the difference between accidents with severe weather incidents
@@ -187,7 +187,19 @@ FROM accident a
 JOIN location l ON a.lat = l.lat AND a.lon = l.lon
 JOIN weather w ON a.lat = w.lat AND a.lon = w.lon 
 WHERE w.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain')
-   OR EXTRACT(HOUR FROM a.time) BETWEEN 20 AND 5;
+   OR EXTRACT(MONTH FROM a.time) IN (12, 1, 2);
+
+-- 3. EXCEPT equivalent (using NOT EXISTS)
+SELECT a.accident_id, a.time, l.city, l.state, w.weather_description
+FROM accident a
+JOIN location l ON a.lat = l.lat AND a.lon = l.lon 
+JOIN weather w ON a.lat = w.lat AND a.lon = w.lon AND a.time = w.time
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM weather w2
+    WHERE w2.lat = a.lat AND w2.lon = a.lon AND w2.time = a.time
+    AND w2.weather_description IN ('Heavy rain', 'Heavy snow', 'T-storm with hail', 'Freezing rain')
+);
 
 
 --9) implementation of the division operator
