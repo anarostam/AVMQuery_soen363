@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "fetch_carCrash.mjs",
+  "main": "P1_DML/OLD_fetch_carCrash.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

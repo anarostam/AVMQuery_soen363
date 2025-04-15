@@ -332,7 +332,7 @@ export async function processAllCrashData() {
     }
 }
 
-// This is to make sure that the file only runs when we directly run it, but not when it is imported into fetch_weather.js
+// This is to make sure that the file only runs when we directly run it, but not when it is imported into OLD_fetch_weather.js
 
 const crashDataResult = processAllCrashData();
 

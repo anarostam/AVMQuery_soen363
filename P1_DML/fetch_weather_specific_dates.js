@@ -11,11 +11,6 @@ const db = new Client({
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
     database: process.env.DB_NAME,
-    ssl: {
-        require: true,
-        rejectUnauthorized: true,
-        ca: fs.readFileSync('us-east-2-bundle.pem').toString(),
-    }
 });
 
 // Connect to the database
@@ -23,10 +18,16 @@ db.connect()
     .then(() => console.log("Connected to the database"))
     .catch(err => console.error("Connection error", err.stack));
 
+
+// Hardcoded locations while waiting for real locations
+//const locations = [
+   //{ lat: 38.732891, lon: -77.058029},
+   //{ lat: 33.401779, lon: -86.954437}
+//]
+
 // Fetch weather data for the specified location
-const fetchWeather = async (lat, lon) => {
+const fetchWeather = async (lat, lon, url) => {
     try {
-        const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${lat}&longitude=${lon}&start_date=2014-01-01&end_date=2015-12-31&hourly=temperature_2m,relative_humidity_2m,dew_point_2m,apparent_temperature,precipitation,rain,snowfall,snow_depth,weather_code,cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,wind_speed_10m,wind_speed_100m,wind_direction_10m,wind_direction_100m,wind_gusts_10m`;
         console.log(`Fetching data from: ${url}`);
 
         const response = await axios.get(url);
@@ -116,6 +117,7 @@ const insertWeatherData = async (weatherData) => {
                         wind_gusts_10m
                     ) 
                     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20)
+                    ON CONFLICT (lat, lon, unix_timestamp) DO NOTHING;
                 `;
 
         for (const record of weatherData) {
@@ -155,11 +157,14 @@ const insertWeatherData = async (weatherData) => {
 // Fetch and insert weather data for all locations
 const fetchAndInsertWeatherData = async (locations) => {
     for (const location of locations) {
-        const { latitude: lat, longitude: lon } = location;
+        const { latitude: lat, longitude: lon, date: date } = location;
+        const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${lat}&longitude=${lon}&start_date=${date}&end_date=${date}&hourly=temperature_2m,apparent_temperature,precipitation,rain,snowfall,snow_depth,weather_code,cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,wind_speed_10m,wind_speed_100m,wind_direction_10m,wind_direction_100m,wind_gusts_10m`;
         
-        const weatherData = await fetchWeather(lat, lon);
+        // Fetch weather data for the entire available range (from API)
+        const weatherData = await fetchWeather(lat, lon, url);
 
         if (weatherData) {
+            // Insert the fetched weather data into the database
             await insertWeatherData(weatherData);
         }
     }
@@ -168,33 +173,47 @@ const fetchAndInsertWeatherData = async (locations) => {
     db.end();
 };
 
+/*
 async function main() {
-    const carCrashFile = await import("./fetch_carCrash.mjs");
+    const carCrashFile = await import("./fetch_carCrash.mjs")
     const crashInfo = await carCrashFile.processAllCrashData();
-
-    // Separating the list of crashes into 4 parts to run this program 4 times (because too many API calls if we run everything all at once)
     const locations = crashInfo.locations;
-    const total = locations.length;
-    const quarter = Math.floor(total / 4);
+    fetchAndInsertWeatherData(locations); 
+}*/
 
-    const args = process.argv;
-    let selectedLocations = [];
 
-    if (args.includes("--first")) {
-        selectedLocations = locations.slice(0, quarter);
-    } else if (args.includes("--second")) {
-        selectedLocations = locations.slice(quarter, 2 * quarter);
-    } else if (args.includes("--third")) {
-        selectedLocations = locations.slice(2 * quarter, 3 * quarter);
-    } else if (args.includes("--fourth")) {
-        selectedLocations = locations.slice(3 * quarter);
-    } else {
-        console.log("Please specify one of: --first, --second, --third, or --fourth");
-        return;
+// Fetch all accident locations from the database
+const getAccidentLocations = async () => {
+    try {
+        const res = await db.query(`
+            SELECT a.lat, a.lon, a.time
+            FROM accident a
+            WHERE NOT EXISTS (
+                SELECT 1 FROM weather w
+                WHERE w.lat = a.lat
+                  AND w.lon = a.lon
+                  AND w.time = a.time
+            )
+        `);
+
+        return res.rows.map(row => {
+            const date = new Date(row.time).toISOString().split('T')[0]; // 'YYYY-MM-DD'
+            return {
+                latitude: row.lat,
+                longitude: row.lon,
+                date: date
+            };
+        });
+    } catch (error) {
+        console.error("Failed to fetch accident locations:", error.message);
+        return [];
     }
+};
 
-    await fetchAndInsertWeatherData(selectedLocations);
+
+async function main() {
+    const locations = await getAccidentLocations();
+    await fetchAndInsertWeatherData(locations);
 }
-
 
 main();
