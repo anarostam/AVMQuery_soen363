@@ -8,7 +8,7 @@ function getRandomNameByDate(date, sex) {
         const year = date.getFullYear();
 
         const fileName = `yob${year}${sex}`;
-        const filePath = path.join(__dirname,"/data/names/", fileName);
+        const filePath = path.join(__dirname,"/P1_data/names/", fileName);
 
         if (!fs.existsSync(filePath)) {
             throw new Error(`No name data found for year ${year}` + filePath);
@@ -36,7 +36,7 @@ function getRandomNameByDate(date, sex) {
 
 function getRandomSurname(){
     try{
-        const filePath = path.join(__dirname,"/data/surname.txt");
+        const filePath = path.join(__dirname,"/P1_data/surname.txt");
         const fileContent = fs.readFileSync(filePath, 'utf8');
 
         const surnames = fileContent.split('\n');
@@ -61,7 +61,7 @@ function getRandomDate() {
 }
 export function getInjury() {
     try {
-        const filePath = path.join(__dirname, "/data/car_accident_injuries.txt");
+        const filePath = path.join(__dirname, "/P1_data/car_accident_injuries.txt");
         const fileContent = fs.readFileSync(filePath, 'utf8');
 
         const injuryfile = fileContent.split('\n');
