@@ -75,7 +75,7 @@ LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/anarostam/AVMQuery
                  county_num: toInteger(row.county_num)
                })
              } IN TRANSACTIONS OF 50 ROWS;
-    
+ //Same proccess for files in weather_chucnk folder from aa to ak   
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/anarostam/AVMQuery_soen363/refs/heads/main/phase2/csv/weatherchunked/chunked_weather_chunk_aj.csv' AS row
 CALL {
   WITH row
@@ -108,7 +108,7 @@ CREATE INDEX accident_id_index IF NOT EXISTS
 FOR (a:Accident)
 ON (a.accident_id);
 
-
+ //Same proccess for files in details_chucnk folder from aa to ag   
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/anarostam/AVMQuery_soen363/main/phase2/csv/detailschunked/chunked_details_chunk_ac.csv' AS row
 CALL {
   WITH row
@@ -169,7 +169,7 @@ CALL {
                     ELSE null
                   END
 } IN TRANSACTIONS OF 5 ROWS;
-
+ //Same proccess for files in intervention_chucnk folder from aa to ao   
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/anarostam/AVMQuery_soen363/refs/heads/main/phase2/csv/interventionchunked/chunked_intervention_chunk_ao.csv' AS row
 CALL {
   WITH row
