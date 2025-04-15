@@ -1,0 +1,281 @@
+CREATE TABLE IF NOT EXISTS public.accident
+(
+    accident_id integer NOT NULL DEFAULT nextval('accident_accident_id_seq'::regclass),
+    weather_id integer,
+    state_case integer,
+    "time" date,
+    evenement_name text COLLATE pg_catalog."default",
+    lat numeric,
+    lon numeric,
+    CONSTRAINT accident_pkey PRIMARY KEY (accident_id),
+    CONSTRAINT accident_weather_id_fkey FOREIGN KEY (weather_id)
+        REFERENCES public.weather (weather_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE SET NULL,
+    CONSTRAINT fk_location_coords FOREIGN KEY (lat, lon)
+        REFERENCES public.location (lat, lon) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE SET NULL
+)
+
+CREATE TABLE IF NOT EXISTS public.accident_vehicle
+(
+    accident_id integer NOT NULL,
+    vin character varying(17) COLLATE pg_catalog."default" NOT NULL,
+    damaged_part integer[],
+    CONSTRAINT accident_vehicle_pkey PRIMARY KEY (accident_id, vin),
+    CONSTRAINT accident_vehicle_accident_id_fkey FOREIGN KEY (accident_id)
+        REFERENCES public.accident (accident_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT accident_vehicle_vin_fkey FOREIGN KEY (vin)
+        REFERENCES public.vehicle (vin) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+
+CREATE TABLE IF NOT EXISTS public.accident_victim
+(
+    accident_id integer NOT NULL,
+    victim_id integer NOT NULL,
+    injured boolean,
+    injury_desc text COLLATE pg_catalog."default",
+    CONSTRAINT accident_victim_pkey PRIMARY KEY (accident_id, victim_id),
+    CONSTRAINT accident_victim_accident_id_fkey FOREIGN KEY (accident_id)
+        REFERENCES public.accident (accident_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT accident_victim_victim_id_fkey FOREIGN KEY (victim_id)
+        REFERENCES public.victim (victim_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+
+CREATE TABLE IF NOT EXISTS public.details
+(
+    detail_id integer NOT NULL DEFAULT nextval('details_detail_id_seq'::regclass),
+    detail_information text COLLATE pg_catalog."default",
+    light_condition text COLLATE pg_catalog."default",
+    road_function text COLLATE pg_catalog."default",
+    intersection_type text COLLATE pg_catalog."default",
+    drunk_driving boolean,
+    CONSTRAINT details_pkey PRIMARY KEY (detail_id),
+    CONSTRAINT details_detail_id_fkey FOREIGN KEY (detail_id)
+        REFERENCES public.accident (accident_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+CREATE TABLE IF NOT EXISTS public.emergency_respondent
+(
+    respondent_id integer NOT NULL DEFAULT nextval('emergency_respondent_respondent_id_seq'::regclass),
+    type text COLLATE pg_catalog."default",
+    contact_info text COLLATE pg_catalog."default",
+    ssn text COLLATE pg_catalog."default",
+    first_name text COLLATE pg_catalog."default",
+    last_name text COLLATE pg_catalog."default",
+    date_of_birth date,
+    sex text COLLATE pg_catalog."default",
+    counties integer[],
+    CONSTRAINT emergency_respondent_pkey PRIMARY KEY (respondent_id)
+)
+
+CREATE TABLE IF NOT EXISTS public.intervention
+(
+    intervention_id integer NOT NULL DEFAULT nextval('intervention_intervention_id_seq'::regclass),
+    victim_id integer NOT NULL,
+    accident_id integer NOT NULL,
+    respondent_id integer NOT NULL,
+    arrival_time date,
+    intervention_details text COLLATE pg_catalog."default",
+    CONSTRAINT intervention_pkey PRIMARY KEY (intervention_id),
+    CONSTRAINT intervention_victim_id_accident_id_respondent_id_key UNIQUE (victim_id, accident_id, respondent_id),
+    CONSTRAINT intervention_accident_id_fkey FOREIGN KEY (accident_id)
+        REFERENCES public.accident (accident_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT intervention_respondent_id_fkey FOREIGN KEY (respondent_id)
+        REFERENCES public.emergency_respondent (respondent_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT intervention_victim_id_fkey FOREIGN KEY (victim_id)
+        REFERENCES public.victim (victim_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+
+
+CREATE TABLE IF NOT EXISTS public.location
+(
+    lat numeric NOT NULL,
+    lon numeric NOT NULL,
+    state text COLLATE pg_catalog."default",
+    city text COLLATE pg_catalog."default",
+    route integer,
+    route_name text COLLATE pg_catalog."default",
+    county text COLLATE pg_catalog."default",
+    county_num integer,
+    CONSTRAINT location_pkey PRIMARY KEY (lat, lon)
+)
+
+
+CREATE TABLE IF NOT EXISTS public.person
+(
+    "SSN" integer NOT NULL DEFAULT nextval('person_id_seq'::regclass),
+    first_name character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    last_name character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    date_of_birth date,
+    CONSTRAINT person_pkey PRIMARY KEY ("SSN")
+)
+
+
+CREATE TABLE IF NOT EXISTS public.vehicle
+(
+    vin character varying(17) COLLATE pg_catalog."default" NOT NULL,
+    maker text COLLATE pg_catalog."default",
+    model text COLLATE pg_catalog."default",
+    type text COLLATE pg_catalog."default",
+    color text COLLATE pg_catalog."default",
+    model_year integer,
+    CONSTRAINT vehicle_pkey PRIMARY KEY (vin)
+)
+
+CREATE TABLE IF NOT EXISTS public.vehicle_victim
+(
+    victim_id integer NOT NULL,
+    vin character varying(17) COLLATE pg_catalog."default" NOT NULL,
+    driving boolean,
+    CONSTRAINT vehicle_victim_pkey PRIMARY KEY (victim_id, vin),
+    CONSTRAINT vehicle_victim_victim_id_fkey FOREIGN KEY (victim_id)
+        REFERENCES public.victim (victim_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT vehicle_victim_vin_fkey FOREIGN KEY (vin)
+        REFERENCES public.vehicle (vin) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+
+CREATE TABLE IF NOT EXISTS public.victim
+(
+    victim_id integer NOT NULL DEFAULT nextval('victim_victim_id_seq'::regclass),
+    contact_info text COLLATE pg_catalog."default",
+    ssn text COLLATE pg_catalog."default",
+    first_name text COLLATE pg_catalog."default",
+    last_name text COLLATE pg_catalog."default",
+    date_of_birth date,
+    sex text COLLATE pg_catalog."default",
+    health_insurance boolean,
+    CONSTRAINT victim_pkey PRIMARY KEY (victim_id)
+)
+
+CREATE TABLE IF NOT EXISTS public.weather
+(
+    weather_id integer NOT NULL DEFAULT nextval('weather_weather_id_seq'::regclass),
+    lat double precision,
+    lon double precision,
+    "time" date,
+    unix_timestamp bigint,
+    weather_description text COLLATE pg_catalog."default",
+    temperature double precision,
+    apparent_temperature double precision,
+    precipitation double precision,
+    rain double precision,
+    snowfall double precision,
+    snow_depth double precision,
+    cloud_cover integer,
+    cloud_cover_low integer,
+    cloud_cover_mid integer,
+    cloud_cover_high integer,
+    wind_speed_10m double precision,
+    wind_speed_100m double precision,
+    wind_direction_10m double precision,
+    wind_direction_100m double precision,
+    wind_gusts_10m double precision,
+    CONSTRAINT weather_pkey PRIMARY KEY (weather_id),
+    CONSTRAINT unique_weather_record UNIQUE (lat, lon, unix_timestamp)
+)
+
+
+
+
+
+
+
+
+-- view
+
+
+CREATE OR REPLACE VIEW public.anonymized_victim
+ AS
+ SELECT a.accident_id,
+    a.evenement_name,
+    a."time",
+    a.lat,
+    a.lon,
+    r.injured,
+    r.injury_desc
+   FROM accident a
+     JOIN accident_victim r ON a.accident_id = r.accident_id
+     JOIN victim v ON r.victim_id = v.victim_id;
+
+CREATE OR REPLACE VIEW public.full_victim_info
+ AS
+ SELECT a.accident_id,
+    a.evenement_name,
+    a."time",
+    r.injured,
+    r.injury_desc
+    v.first_name
+   FROM accident a
+     JOIN accident_victim r ON a.accident_id = r.accident_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- trigger
+CREATE OR REPLACE FUNCTION public.check_respondent_county_match()
+    RETURNS trigger
+    LANGUAGE 'plpgsql'
+    COST 100
+    VOLATILE NOT LEAKPROOF
+AS $BODY$
+DECLARE
+	accident_county int;
+	respondent_counties int[];
+BEGIN
+	select county_num into accident_county
+	from accident a join location l on (a.lat = l.lat and a.lon = l.lon)
+	where a.accident_id = new.accident_id;
+
+	select e.counties into respondent_counties
+	from emergency_respondent e
+	where e.respondent_id = new.respondent_id;
+
+	IF accident_county = ANY(respondent_counties) THEN
+        RETURN NEW; 
+    ELSE
+        RAISE EXCEPTION 'respondent allowed in counties: %, accident in county: %. cannot match', respondent_counties, accident_county;
+    END IF;
+END;
+
+
+
+CREATE OR REPLACE TRIGGER check_respondent_county_before_insert
+    BEFORE INSERT
+    ON public.intervention
+    FOR EACH ROW
+    EXECUTE FUNCTION public.check_respondent_county_match();
